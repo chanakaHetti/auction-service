@@ -1,6 +1,6 @@
-# Codingly.io: Base Serverless Framework Template
+# Base Serverless Framework Template
 
-https://codingly.io
+https://iamchanaka.com
 
 ## What's included
 * Folder structure used consistently across our projects.
