@@ -14,4 +14,13 @@ cd YOUR_PROJECT_NAME
 npm install
 ```
 
+aws configure
+Enter all details of created IAM user
+
+Deploy to the AWS using serveless
+sls deploy -v
+
+Remove the depoyed app
+sls remove -v
+
 You are ready to go!
