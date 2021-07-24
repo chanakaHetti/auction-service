@@ -11,7 +11,13 @@ provider:
   memorySize: 256
   stage: ${opt:stage, 'dev'}
   region: eu-west-1
+  iamRoleStatements:
+    - ${file(iam/AuctionsTableIAM.yaml):AuctionsTableIAM}
   
+resources:
+  Resources:
+    AuctionsTable: ${file(resources/AuctionsTable.yaml):AuctionsTable}
+
 functions:
   createAuction:
     handler: src/handlers/createAuction.handler
